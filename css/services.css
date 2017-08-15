@@ -1,0 +1,233 @@
+#assembly-logo{
+    width: 40px;
+    height: 45px;
+    margin-top: -29%;
+    /*align-content: center;*/
+}
+
+#serviceHours{
+    margin-left: 4%;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#prayerId1{
+    margin-left: 4%;
+    font-weight: bold;
+    font-size: 2vw;
+    color: dimgray;
+}
+
+#prayerDay1{
+    margin-left: 15%;
+    font-weight: bold;
+    font-size: 2vw;
+    color: dimgray;
+
+}
+
+#prayerTime1{
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 2vw;
+    color: dimgray;
+
+}
+
+#prayerId2{
+    margin-left: 4%;
+    font-weight: bold;
+    font-size: 2vw;
+    color: dimgray;
+
+}
+
+#prayerDay2{
+    margin-left: 4%;
+    font-weight: bold;
+    font-size: 2vw;
+    color: dimgray;
+
+}
+
+#prayerTime2{
+    margin-left: 4%;
+    font-weight: bold;
+    font-size: 2vw;
+    color: dimgray;
+
+}
+
+#prayerId3{
+    margin-left: 4%;
+    font-weight: bold;
+    font-size: 2vw;
+    color: dimgray;
+
+}
+
+#prayerDay3{
+    margin-left: 10.5%;
+    font-weight: bold;
+    font-size: 2vw;
+    color: dimgray;
+
+}
+
+#prayerTime3{
+    margin-left: 5.7%;
+    font-weight: bold;
+    font-size: 2vw;
+    color: dimgray;
+
+}
+
+#prayerId4{
+    margin-left: 4%;
+    font-weight: bold;
+    font-size: 2vw;
+    color: dimgray;
+
+}
+
+#prayerDay4{
+    margin-left: 14.2%;
+    font-weight: bold;
+    font-size: 2vw;
+    color: dimgray;
+
+}
+
+#prayerTime4{
+    margin-left: 5.7%;
+    font-weight: bold;
+    font-size: 2vw;
+    color: dimgray;
+
+}
+
+
+@media only screen and (max-width: 860px) {
+    #prayerId1, #prayerDay1, #prayerTime1 {
+        font-size: 4vw;
+        color: dimgray;
+
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #prayerId1{
+        margin-left: 11px;
+        color: dimgray;
+
+    }
+}
+
+@media only screen and (max-width: 860px) {
+     #prayerDay1{
+         margin-left: 103px;
+         color: dimgray;
+
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #prayerTime1{
+        margin-left: 33px;
+        color: dimgray;
+
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #prayerId2, #prayerDay2, #prayerTime2 {
+        font-size: 4vw;
+        color: dimgray;
+
+    }
+}
+
+
+@media only screen and (max-width: 860px) {
+    #prayerId2{
+        margin-left: 10px;
+        color: dimgray;
+        fonst-size: 1vw;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #prayerDay2{
+        margin-left: 15px;
+        color: dimgray;
+
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #prayerTime2{
+        margin-left: 25px;
+        color: dimgray;
+
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #prayerId3, #prayerDay3, #prayerTime3 {
+        font-size: 4vw;
+        color: dimgray;
+
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #prayerId3{
+        margin-left: 10px;
+        color: dimgray;
+
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #prayerDay3{
+    margin-left: 67px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #prayerTime3 {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #prayerId4, #prayerDay4, #prayerTime4 {
+        font-size: 4vw;
+        color: dimgray;
+
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #prayerId4{
+        margin-left: 11px;
+        color: dimgray;
+
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #prayerDay4{
+        margin-left: 96px;
+        color: dimgray;
+
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #prayerTime4{
+        margin-left: 37px;
+        color: dimgray;
+
+    }
+}

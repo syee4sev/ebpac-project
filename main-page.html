@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>EBPA Church</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main-page.css">
+    <link href="https://fonts.googleapis.com/css?family=Vast+Shadow" rel="stylesheet">
+
+</head>
+<body>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDU4248fa2vraLTqKQ440z_Jz8Kz9nsy5U"></script>
+
+<!--navbar-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="church-logo" class="navbar-brand" href="http://apostolicassembly.org/">
+                <img id="assembly-logo" src="imgs/apostolicImage.png" alt="spigot"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="main-page.html">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="http://asambleaapostolica.org/english/the-assembly/what-we-believe/">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="ministries.html">Ministries</a></li>
+                <li><a href="about-us.html">Contact Us</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right social">
+                <li><a href="http://www.facebook.com/elbuenpastorchurch"><i class="fa fa-lg fa-facebook"></i></a></li>
+                <!--<li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>-->
+                <!--<li><a href="#"><i class="fa fa-lg fa-google-plus"></i></a></li>-->
+                <!--<li><a href="#"><i class="fa fa-lg fa-linkedin"></i></a></li>-->
+            </ul>
+
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--end navbar-->
+
+
+<!--<div class="container-fluid">-->
+
+<section id="main-page">
+    <div class="container">
+
+        <div color-border>
+            <p id="welcomeId">WELCOME</p>
+            <p id="secondLineId">El Buen Pastor Apostolic Church</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="church-ministries">
+    <div class="divAttributes container">
+    </div>
+</section>
+
+<section id="youth">
+    <div class="divAttributes container">
+        <p id="youth-ministires-text"></p>
+    </div>
+</section>
+
+<section id="who-we-are">
+    <div class="divAttributes container ">
+    </div>
+</section>
+
+
+<!--<section id="join-us-for-worship">-->
+    <!--<p id="join-us">Join us here ..</p>-->
+    <!--<div id="mapDiv">-->
+        <!--<div class="divAttributes container">-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+
+
+<!--</div>-->
+
+
+<script>
+    (function () {
+        "use strict";
+
+        var zm = 10;
+        var address = "138 Jasmine Ln, San Antonio, TX 78237";
+        var geocoder = new google.maps.Geocoder();
+//        var latt = document.getElementById("lat").getAttribute("value");
+//        var long = document.getElementById("lng").getAttribute("value");
+        var infowindow = new google.maps.InfoWindow({
+            content: "Changing the world, one programmer at a time."
+        });
+
+        // get location by lng, lat
+        var mapOptions = {
+            zoom: zm,
+            disableDefaultUI: false,
+            center: {
+                lat: 29.4268,
+                lng: -98.4896
+            }
+        };
+
+
+        // display map
+        var map = new google.maps.Map(document.getElementById("mapDiv"), mapOptions);
+
+        function centerOnAddress(address) {
+            // get specific address - using var address
+            geocoder.geocode({"address": address}, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    map.setCenter(results[0].geometry.location)
+
+                    var marker = new google.maps.Marker({
+                        position: results[0].geometry.location,
+                        map: map,
+                        title: '138 Jasmine Ln, San Antonio, TX 78237'
+                    });
+                }
+            });
+        }
+
+        centerOnAddress(address);
+
+
+        //update map when update button is pressed
+//        var update = document.getElementById("upd");
+//        update.addEventListener('click', function () {
+//            var latInput = document.getElementById("lat");
+//            var lngInput = document.getElementById("lng");
+//            var addInput = document.getElementById("ad");
+//
+//            if (latInput.value == '' && lngInput.value == '') {
+//                centerOnAddress(addInput.value);
+//            } else {
+//                var center = {
+//                    lat: parseFloat(latInput.value),
+//                    lng: parseFloat(lngInput.value)
+//                };
+//
+//                map.setCenter(center);
+//
+//                var marker = new google.maps.Marker({
+//                    position: center,
+//                    map: map,
+//                    title: 'You are here!'
+//                });
+//
+//                infowindow.open(map, marker);
+//            }
+//
+//
+//        });
+
+//        // add zoom button
+//        var z1 = document.getElementById("in");
+//        z1.addEventListener("click", function () {
+//            map.setZoom(map.getZoom() + 1)
+//
+//        });
+//
+//        var z2 = document.getElementById("out");
+//        z2.addEventListener("click", function () {
+//            map.setZoom(map.getZoom() - 1)
+//        });
+
+
+    })();
+
+
+    //    var i = 0;
+    //    while(i > 10) {
+    //        console.log(i);
+    //        i++;
+    //    }
+
+
+</script>
+
+
+
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+</script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</body>
+</html>

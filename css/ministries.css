@@ -1,0 +1,147 @@
+#assembly-logo{
+    width: 40px;
+    height: 45px;
+    margin-top: -29%;
+    /*align-content: center;*/
+}
+
+
+
+
+/*men of valor*/
+#mensMinistry{
+    height: 264px;
+    width: 395px;
+    margin-left: 485px;
+    background-image: url("../imgs/menOfValorImage.png");
+    background-repeat:no-repeat;
+
+}
+
+#presDiv{
+    border-bottom: black;
+    border-bottom-style: solid;
+    margin-top: 5px;
+}
+
+#menOfValorPres{
+    margin-left: 35vw;
+    font-size: 2vw;
+}
+
+#menOfValorSecretary{
+    margin-left: 35vw;
+    font-size: 2vw;
+}
+
+#menOfValorTreasurer{
+    margin-left: 35vw;
+    font-size: 2vw;
+}
+/*end of men of valor*/
+
+/*ignite youth*/
+#igniteMinistry{
+    height: 150px;
+    width: 395px;
+    margin-left: 580px;
+    margin-top: 30px;
+    background-image: url("../imgs/ignitedMinistriesImage.jpg");
+    background-repeat:no-repeat;
+
+}
+
+#igniteDiv{
+    border-bottom: black;
+    border-bottom-style: solid;
+    margin-top: 5px;
+}
+
+#youthLeader{
+    margin-left: 35vw;
+    font-size: 2vw;
+}
+
+#youthLeaderSecretary{
+    margin-left: 35vw;
+    font-size: 2vw;
+}
+
+#youthLeaderTreasurer{
+    margin-left: 35vw;
+    font-size: 2vw;
+}
+/*end of ignite youth*/
+
+
+/*ark kids*/
+#arkMinistry{
+    height: 150px;
+    width: 395px;
+    margin-left: 510px;
+    margin-top: 30px;
+    background-image: url("../imgs/arkImage.png");
+    background-repeat:no-repeat;
+
+}
+
+#arkDiv{
+    border-bottom: black;
+    border-bottom-style: solid;
+    margin-top: 5px;
+}
+
+#childrensDirector{
+    margin-left: 35vw;
+    font-size: 2vw;
+}
+
+#childrensAssistant{
+    margin-left: 35vw;
+    font-size: 2vw;
+}
+
+/*end of ark kids*/
+
+
+/*mens ministry*/
+@media only screen and (max-width: 860px) {
+    #mensMinistry{
+        margin-left: 28px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #menOfValorPres, #menOfValorSecretary, #menOfValorTreasurer{
+        font-size: 4vw;
+        margin-left: 25vw;
+    }
+}
+
+/*ignite ministry*/
+@media only screen and (max-width: 860px) {
+    #igniteMinistry{
+        margin-left: 115px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #youthLeader, #youthLeaderSecretary, #youthLeaderTreasurer{
+        font-size: 4vw;
+        margin-left: 25vw;
+    }
+}
+
+/*ark kids*/
+@media only screen and (max-width: 860px) {
+    #arkMinistry{
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #childrensDirector, #childrensAssistant{
+        font-size: 4vw;
+        margin-left: 25vw;
+    }
+}

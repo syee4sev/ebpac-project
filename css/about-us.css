@@ -1,0 +1,147 @@
+#assembly-logo{
+    width: 40px;
+    height: 45px;
+    margin-top: -29%;
+    /*align-content: center;*/
+}
+
+div .pastor-wife-image{
+    /*background-image: url("../imgs/pastor-wife-image.jpg");*/
+    /*height: 35vw;*/
+    /*width:38vw;*/
+}
+
+#prayText{
+    margin-left:3vw;
+    font-weight: bold;
+    color: black;
+    font-size: 2vw;
+}
+
+#AddressLabel{
+    margin-left: 40px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5vw;
+
+}
+
+#AddressText{
+    margin-left: 40px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5vw;
+}
+
+
+#AddressCity{
+    margin-left: 175px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5vw;
+}
+
+
+#PhoneText{
+    margin-left: 175px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5vw;
+}
+
+
+#EmailText{
+    margin-left: 175px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.5vw;
+}
+
+#join-us-for-worship{
+    background-color: black;
+    /*height: 51vw;*/
+    padding: 55px 0 0 0;
+
+}
+
+
+#join-us{
+    font-size: 25px;
+    color: white;
+}
+
+
+#mapDiv{
+    height: 390px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1240px) {
+    #AddressCity, #PhoneText, #EmailText{
+        margin-left: 160px;
+    }
+}
+
+
+@media only screen and (max-width: 1060px) {
+    #AddressCity, #PhoneText, #EmailText{
+        margin-left: 150px;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    #AddressCity, #PhoneText, #EmailText{
+        margin-left: 135px;
+    }
+}
+
+
+
+/*change font size*/
+@media only screen and (max-width: 1040px) {
+    #AddressLabel, #AddressText, #AddressCity, #PhoneText, #EmailText{
+        font-size: 2vw;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    #AddressCity, #PhoneText, #prayText, #EmailText{
+        font-size: 2vw;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    #AddressLabel, #AddressText, #AddressCity, #PhoneText, #prayText, #EmailText{
+        font-size: 3vw;
+    }
+}
+
+/*move text over */
+@media only screen and (max-width: 1040px) {
+    #prayText{
+        margin-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    #AddressText{
+        margin-left: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    #AddressText {
+        margin-left: 29px;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    #AddressText{
+        margin-left: 40px;
+    }
+}
